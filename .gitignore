@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+/input
+/input-cache
+/output
+/temp
+/template
+/fsh-tank/careconnectDOWNLOAD
+/fsh-tank/fsh-generated
+/fsh-tank/fsh-generated-STU3
+node_modules/

@@ -1,0 +1,726 @@
+{
+	"resourceType": "Bundle",
+	"id": "ca60c0bd-bae0-41a1-9c67-06666eca0757",
+	"type": "message",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:b5500d1a-02ff-415e-be3e-5a25cf9a3607",
+			"resource": {
+				"resourceType": "MessageHeader",
+				"id": "b5500d1a-02ff-415e-be3e-5a25cf9a3607",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml">\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+				},
+				"event": {
+					"system": "https://yhcr.nhs.uk/STU3/ValueSet/EventType-1",
+					"code": "YH001",
+					"display": "Transfer of care from ambulance to ED"
+				},
+				"destination": [
+					{
+						"name": "YHCR System of Systems Reliable Message Gateway",
+						"endpoint": "https://sandpit.yhcr.nhs.uk/fhir/stu3/$process-message"
+					}
+				],
+				"receiver": {
+					"reference": "Organization/YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RR8"
+					},
+					"display": "LEEDS TEACHING HOSPITALS NHS TRUST"
+				},
+				"sender": {
+					"reference": "Organization/YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RX8"
+					},
+					"display": "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
+				},
+				"timestamp": "2021-07-08T17:21:36Z",
+				"source": {
+					"name": "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+					"software": "SynFHIR Repository",
+					"version": "localdb-1.4",
+					"contact": {
+						"system": "email",
+						"value": "support@synanetics.com"
+					},
+					"endpoint": "https://INTENG1.yas.nhs.uk/fhirbus"
+				},
+				"focus": [
+					{
+						"reference": "Bundle/b2463ba3-16e6-44d8-9e04-4430a0ca7089"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "https://fhir.sandpit.yhcr.nhs.uk/fhir/stu3/Organization/YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+			"resource": {
+				"resourceType": "Organization",
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RR8"
+					}
+				],
+				"name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+				"address": [
+					{
+						"line": [
+							"ST. JAMES'S UNIVERSITY HOSPITAL",
+							"BECKETT STREET",
+							"LEEDS"
+						],
+						"postalCode": "LS9 7TF"
+					}
+				],
+				"active": false,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.yhcr.nhs.uk/ValueSet/organization-type",
+								"code": "trust",
+								"display": "NHS Trust"
+							}
+						],
+						"text": "NHS Trust"
+					}
+				],
+				"id": "YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+				"meta": {
+					"lastUpdated": "2020-08-19T14:22:10.615Z",
+					"versionId": "3"
+				}
+			}
+		},
+		{
+			"fullUrl": "https://fhir.sandpit.yhcr.nhs.uk/fhir/stu3/Organization/YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+			"resource": {
+				"resourceType": "Organization",
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RX8"
+					}
+				],
+				"name": "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+				"address": [
+					{
+						"line": [
+							"SPRINGHILL",
+							"2 BRINDLEY WAY",
+							"WAKEFIELD 41 INDUSTRIAL ESTATE",
+							"WAKEFIELD"
+						],
+						"postalCode": "WF2 0XQ"
+					}
+				],
+				"active": false,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.yhcr.nhs.uk/ValueSet/organization-type",
+								"code": "trust",
+								"display": "NHS Trust"
+							}
+						],
+						"text": "NHS Trust"
+					}
+				],
+				"id": "YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+				"meta": {
+					"lastUpdated": "2020-08-19T14:36:26.744Z",
+					"versionId": "3"
+				}
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:b2463ba3-16e6-44d8-9e04-4430a0ca7089",
+			"resource": {
+				"resourceType": "Bundle",
+				"id": "b2463ba3-16e6-44d8-9e04-4430a0ca7089",
+				"meta": {
+					"lastUpdated": "2021-07-08T16:21:38Z"
+				},
+				"type": "document",
+				"entry": [
+					{
+						"fullUrl": "urn:uuid:0eea4eb4-1443-4754-aacc-1be8248daf19",
+						"resource": {
+							"resourceType": "Composition",
+							"id": "0eea4eb4-1443-4754-aacc-1be8248daf19",
+							"text": {
+								"status": "generated",
+								"div": "<div xmlns=\"http://www.w3.org/1999/xhtml/">\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+							},
+							"status": "preliminary",
+							"type": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "312711000000101",
+										"display": "Ambulance Service Patient Summary Report"
+									}
+								],
+								"text": "Discharge from ambulance clinical care"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+								"display": "JOHN SMITH"
+							},
+							"encounter": {
+								"reference": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"date": "2021-07-08T17:21:38Z",
+							"title": "Ambulatory Transfer of Care",
+							"confidentiality": "N",
+							"section": [
+								{
+									"title": "Incident Details",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "913331000000108",
+												"display": "Incident details"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+										}
+									]
+								},
+								{
+									"title": "Patient Demographics",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886731000000109",
+												"display": "Patient Demographics"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+											"display": "JOHN SMITH"
+										}
+									]
+								},
+								{
+									"title": "GP Practice",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886711000000101",
+												"display": "General practitioner practice"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+										}
+									]
+								},
+								{
+									"title": "Presenting Complaints or Issues",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886891000000102",
+												"display": "Presenting complaints or issues"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Relevant Past History",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "933271000000106",
+												"display": "Relevant past medical, surgical and mental health history"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Allergies and Adverse Reaction",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886921000000105",
+												"display": "Allergies and adverse reaction"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Observations",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1102421000000108",
+												"display": "Observations"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Treatments and Interventions",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1077891000000107",
+												"display": "Treatments and interventions"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Medications and Medical Devices",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "933361000000108",
+												"display": "Medications and medical devices"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Information and Advice Given",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1052951000000105",
+												"display": "Information and advice given"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Mobility",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "325931000000109",
+												"display": "Assessment"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Investigation Outcome",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "717661000000106",
+												"display": "Outcome"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Patient",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+								],
+								"lastUpdated": "2021-07-08T17:21:22.037Z",
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"extension": [
+								{
+									"url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+												"code": "Z",
+												"display": "Not stated"
+											}
+										]
+									}
+								}
+							],
+							"identifier": [
+								{
+									"extension": [
+										{
+											"url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+														"code": "01",
+														"display": "Number present and verified"
+													}
+												]
+											}
+										}
+									],
+									"use": "official",
+									"system": "https://fhir.nhs.uk/Id/nhs-number",
+									"value": "1234567890"
+								}
+							],
+							"active": true,
+							"name": [
+								{
+									"use": "official",
+									"family": "SMITH",
+									"given": [
+										"JOHN"
+									]
+								}
+							],
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "07123987654",
+									"use": "home"
+								}
+							],
+							"gender": "male",
+							"birthDate": "1975-01-01",
+							"address": [
+								{
+									"use": "home",
+									"type": "physical",
+									"line": [
+										"1 SMITH STREET"
+									],
+									"city": "SMITHTOWN",
+									"postalCode": "SM1 2TH",
+									"country": "GB"
+								}
+							],
+							"generalPractitioner": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+									"identifier": {
+										"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+										"value": "B81039"
+									}
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Practitioner",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+								],
+								"lastUpdated": "2021-07-08T17:21:23.007Z",
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+									"value": "B81039"
+								}
+							],
+							"active": true,
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "0469 572058",
+									"use": "work"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"text": "THE SURGERY WORSLEY ROAD IMMINGHAM, GRIMSBY",
+									"postalCode": "DN40 1BE"
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Encounter",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+								],
+								"lastUpdated": "2021-07-08T17:21:35.747Z",
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"text": {
+								"status": "generated",
+								"div": "<div xmlns='http://www.w3.org/1999/xhtml'>The ePRID: 656360 has an associated incident number: 10001455 . ** The incident number should NEVER be used to match to directly match to a patient record. Only the ePR ID has a single definite reference to a single YAS patient record. **</div>"
+							},
+							"identifier": [
+								{
+									"use": "usual",
+									"system": "http://ns.yhcr.nhs.uk/yas/epr-id",
+									"value": "656360"
+								},
+								{
+									"use": "usual",
+									"system": "http://ns.yhcr.nhs.uk/yas/incident-id",
+									"value": "10001455"
+								}
+							],
+							"status": "in-progress",
+							"class": {
+								"system": "http://hl7.org/fhir/v3/ActCode",
+								"code": "EMER",
+								"display": "emergency"
+							},
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "http://snomed.info/sct",
+											"code": "11424001",
+											"display": "Ambulance-based care"
+										}
+									]
+								}
+							],
+							"priority": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/v3/ActPriority",
+										"code": "EM",
+										"display": "emergency"
+									}
+								]
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+								"display": "JOHN SMITH"
+							},
+							"period": {
+								"start": "2021-07-08T16:01:00+01:00"
+							},
+							"hospitalization": {
+								"destination": {
+									"reference": "https://yhcr.nhs.uk/FHIR/Location/18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3",
+									"identifier": {
+										"use": "official",
+										"value": "YHCR:18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3"
+									},
+									"display": "LEEDS GENERAL INFIRMARY - ED"
+								}
+							},
+							"location": [
+								{
+									"location": {
+										"reference": "Location/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+										"display": "3 RAILWAY COTTAGES BOG HALL WHITBY  YO21 1TH"
+									},
+									"status": "active"
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Location/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Location",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:21:25.444Z",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"
+								],
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"name": "Casualty Location",
+							"managingOrganization": {
+								"reference": "Organization/RX8",
+								"display": "Yorkshire Ambulance Service NHS Trust"
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

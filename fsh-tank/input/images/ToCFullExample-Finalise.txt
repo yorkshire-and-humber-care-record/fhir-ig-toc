@@ -1,0 +1,1310 @@
+{
+	"resourceType": "Bundle",
+	"id": "6466338c-a901-4785-880b-3afc03386ee1",
+	"type": "message",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:2c9e5596-dcc7-4f0c-ab54-8abfa6bb6c89",
+			"resource": {
+				"resourceType": "MessageHeader",
+				"id": "2c9e5596-dcc7-4f0c-ab54-8abfa6bb6c89",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml">\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+				},
+				"event": {
+					"system": "https://yhcr.nhs.uk/STU3/ValueSet/EventType-1",
+					"code": "YH001",
+					"display": "Transfer of care from ambulance to ED"
+				},
+				"destination": [
+					{
+						"name": "YHCR System of Systems Reliable Message Gateway",
+						"endpoint": "https://sandpit.yhcr.nhs.uk/fhir/stu3/$process-message"
+					}
+				],
+				"receiver": {
+					"reference": "Organization/YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RR8"
+					},
+					"display": "LEEDS TEACHING HOSPITALS NHS TRUST"
+				},
+				"sender": {
+					"reference": "Organization/YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+					"identifier": {
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RX8"
+					},
+					"display": "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
+				},
+				"timestamp": "2021-07-08T17:27:20Z",
+				"source": {
+					"name": "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+					"software": "SynFHIR Repository",
+					"version": "localdb-1.4",
+					"contact": {
+						"system": "email",
+						"value": "support@synanetics.com"
+					},
+					"endpoint": "https://INTENG1.yas.nhs.uk/fhirbus"
+				},
+				"focus": [
+					{
+						"reference": "Bundle/aa769707-882f-459f-b736-9c87638568e6"
+					},
+					{
+						"reference": "DocumentReference/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "https://fhir.sandpit.yhcr.nhs.uk/fhir/stu3/Organization/YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+			"resource": {
+				"resourceType": "Organization",
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RR8"
+					}
+				],
+				"name": "LEEDS TEACHING HOSPITALS NHS TRUST",
+				"address": [
+					{
+						"line": [
+							"ST. JAMES'S UNIVERSITY HOSPITAL",
+							"BECKETT STREET",
+							"LEEDS"
+						],
+						"postalCode": "LS9 7TF"
+					}
+				],
+				"active": false,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.yhcr.nhs.uk/ValueSet/organization-type",
+								"code": "trust",
+								"display": "NHS Trust"
+							}
+						],
+						"text": "NHS Trust"
+					}
+				],
+				"id": "YHCR:4bbfa2f7-00ec-4853-aa05-d41fc2e7ef9e",
+				"meta": {
+					"lastUpdated": "2020-08-19T14:22:10.615Z",
+					"versionId": "3"
+				}
+			}
+		},
+		{
+			"fullUrl": "https://fhir.sandpit.yhcr.nhs.uk/fhir/stu3/Organization/YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+			"resource": {
+				"resourceType": "Organization",
+				"identifier": [
+					{
+						"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+						"value": "RX8"
+					}
+				],
+				"name": "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+				"address": [
+					{
+						"line": [
+							"SPRINGHILL",
+							"2 BRINDLEY WAY",
+							"WAKEFIELD 41 INDUSTRIAL ESTATE",
+							"WAKEFIELD"
+						],
+						"postalCode": "WF2 0XQ"
+					}
+				],
+				"active": false,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.yhcr.nhs.uk/ValueSet/organization-type",
+								"code": "trust",
+								"display": "NHS Trust"
+							}
+						],
+						"text": "NHS Trust"
+					}
+				],
+				"id": "YHCR:3ed5d53d-29d6-419c-8a0a-eb67ab57458a",
+				"meta": {
+					"lastUpdated": "2020-08-19T14:36:26.744Z",
+					"versionId": "3"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/DocumentReference/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+			"resource": {
+				"resourceType": "DocumentReference",
+				"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+				"meta": {
+					"lastUpdated": "2021-07-08T17:27:11.818Z",
+					"tag": [
+						{
+							"code": "LocalDB",
+							"display": "LocalDB"
+						}
+					]
+				},
+				"identifier": [
+					{
+						"use": "usual",
+						"system": "YASEPR",
+						"value": "63fe0605-677c-48b3-a54c-dc0f7714c63e"
+					}
+				],
+				"status": "current",
+				"docStatus": "final",
+				"authenticator": {
+					"reference": "Organization/RX8",
+					"display": "Yorkshire Ambulance Service NHS Trust"
+				},
+				"custodian": {
+					"reference": "Organization/RX8",
+					"display": "Yorkshire Ambulance Service NHS Trust"
+				},
+				"content": [
+					{
+						"attachment": {
+							"contentType": "application/pdf",
+							"language": "en-GB",
+							"data": "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Mjc2XSAvQ29udGVudHMgMTEgMCBSIC9SZXNvdXJjZXMgPDwgL1Byb2NTZXQgMSAwIFIgL1hPYmplY3QgPDwgPj4gL0ZvbnQgPDwgL0YzIDMgMCBSID4+ID4+ID4+DQplbmRvYmoNCjMgMCBvYmoNCjw8IC9UeXBlIC9Gb250IC9TdWJ0eXBlIC9UeXBlMSAvQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyA+Pg0KZW5kb2JqDQo1IDAgb2JqDQo8PCAvVHlwZSAvUGFnZXMgL0tpZHMgWyAyIDAgUiA2IDAgUiA4IDAgUiAxMCAwIFIgXSAvQ291bnQgNCA+Pg0KZW5kb2JqDQoxMiAwIG9iag0KPDwgL1R5cGUgL0NhdGFsb2cgL1BhZ2VzIDUgMCBSID4+DQplbmRvYmoNCjEzIDAgb2JqDQo8PCAvVGl0bGUgPGZlZmYwMDY1MDA1MDAwNTIwMDYxMDAzNDAwNTAwMDcyMDA2OTAwNmUwMDc0Pg0KL0F1dGhvciA8Pg0KL1N1YmplY3QgPD4NCi9DcmVhdG9yIChNaWNyb3NvZnQgUmVwb3J0aW5nIFNlcnZpY2VzIDEwLjAuMC4wKQ0KL1Byb2R1Y2VyIChNaWNyb3NvZnQgUmVwb3J0aW5nIFNlcnZpY2VzIFBERiBSZW5kZXJpbmcgRXh0ZW5zaW9uIDEwLjAuMC4wKQ0KL0NyZWF0aW9uRGF0ZSAoRDoyMDIxMDcwODE4MjQ1NSswMScwMCcpDQo+Pg0KZW5kb2JqDQp4cmVmDQowIDE0DQowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDAwMTAgMDAwMDAgbg0KMDAwMDAwMzYyOCAwMDAwMCBuDQowMDAwMDEwOTAzIDAwMDAwIG4NCjAwMDAwMDAwNjUgMDAwMDAgbg0KMDAwMDAxMTAwMyAwMDAwMCBuDQowMDAwMDA2NzA3IDAwMDAwIG4NCjAwMDAwMDM3OTQgMDAwMDAgbg0KMDAwMDAwOTcxMCAwMDAwMCBuDQowMDAwMDA2ODczIDAwMDAwIG4NCjAwMDAwMTA3MzUgMDAwMDAgbg0KMDAwMDAwOTg3NiAwMDAwMCBuDQowMDAwMDExMDg0IDAwMDAwIG4NCjAwMDAwMTExMzcgMDAwMDAgbg0KdHJhaWxlciA8PCAvU2l6ZSAxNCAvUm9vdCAxMiAwIFIgL0luZm8gMTMgMCBSID4+DQpzdGFydHhyZWYNCjExNDA4DQolJUVPRg==",
+							"url": "https://erpweb.yas.nhs.uk/yaseprfhirwebapi/api/v1/documentreference/63fe0605-677c-48b3-a54c-dc0f7714c63e/GetTOCDOC",
+							"size": 11773,
+							"title": "YASePR Transfer of Care document",
+							"creation": "2021-07-08"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:aa769707-882f-459f-b736-9c87638568e6",
+			"resource": {
+				"resourceType": "Bundle",
+				"id": "aa769707-882f-459f-b736-9c87638568e6",
+				"meta": {
+					"lastUpdated": "2021-07-08T16:27:24Z"
+				},
+				"type": "document",
+				"entry": [
+					{
+						"fullUrl": "urn:uuid:a20ca52d-45a2-47e2-91a8-fc6a179382ce",
+						"resource": {
+							"resourceType": "Composition",
+							"id": "a20ca52d-45a2-47e2-91a8-fc6a179382ce",
+							"text": {
+								"status": "generated",
+								"div": "<div xmlns=\"http://www.w3.org/1999/xhtml/">\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+							},
+							"status": "final",
+							"type": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "312711000000101",
+										"display": "Ambulance Service Patient Summary Report"
+									}
+								],
+								"text": "Discharge from ambulance clinical care"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+								"display": "JOHN SMITH"
+							},
+							"encounter": {
+								"reference": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"date": "2021-07-08T17:27:24Z",
+							"title": "Ambulatory Transfer of Care",
+							"confidentiality": "N",
+							"section": [
+								{
+									"title": "Incident Details",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "913331000000108",
+												"display": "Incident details"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+										}
+									]
+								},
+								{
+									"title": "Patient Demographics",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886731000000109",
+												"display": "Patient Demographics"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+											"display": "JOHN SMITH"
+										}
+									]
+								},
+								{
+									"title": "GP Practice",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886711000000101",
+												"display": "General practitioner practice"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+										}
+									]
+								},
+								{
+									"title": "Presenting Complaints or Issues",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886891000000102",
+												"display": "Presenting complaints or issues"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Relevant Past History",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "933271000000106",
+												"display": "Relevant past medical, surgical and mental health history"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Allergies and Adverse Reaction",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "886921000000105",
+												"display": "Allergies and adverse reaction"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Observations",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1102421000000108",
+												"display": "Observations"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"entry": [
+										{
+											"reference": "Observation/91ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/92ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/93ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/94ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/95ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/96ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/97ffdf71-11e0-eb11-b808-000af7509652"
+										},
+										{
+											"reference": "Observation/1652b93a-fc39-4b24-9adf-043f66f14721"
+										}
+									]
+								},
+								{
+									"title": "Treatments and Interventions",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1077891000000107",
+												"display": "Treatments and interventions"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Medications and Medical Devices",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "933361000000108",
+												"display": "Medications and medical devices"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Information and Advice Given",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1052951000000105",
+												"display": "Information and advice given"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Mobility",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "325931000000109",
+												"display": "Assessment"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								},
+								{
+									"title": "Investigation Outcome",
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "717661000000106",
+												"display": "Outcome"
+											}
+										]
+									},
+									"text": {
+										"status": "empty"
+									},
+									"mode": "snapshot",
+									"emptyReason": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/list-empty-reason",
+												"code": "unavailable",
+												"display": "Unavailable"
+											}
+										]
+									}
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Patient",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+								],
+								"lastUpdated": "2021-07-08T17:21:22.037Z",
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"extension": [
+								{
+									"url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-EthnicCategory-1",
+												"code": "Z",
+												"display": "Not stated"
+											}
+										]
+									}
+								}
+							],
+							"identifier": [
+								{
+									"extension": [
+										{
+											"url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+														"code": "01",
+														"display": "Number present and verified"
+													}
+												]
+											}
+										}
+									],
+									"use": "official",
+									"system": "https://fhir.nhs.uk/Id/nhs-number",
+									"value": "1234567890"
+								}
+							],
+							"active": true,
+							"name": [
+								{
+									"use": "official",
+									"family": "SMITH",
+									"given": [
+										"JOHN"
+									]
+								}
+							],
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "07123987654",
+									"use": "home"
+								}
+							],
+							"gender": "male",
+							"birthDate": "1975-01-01",
+							"address": [
+								{
+									"use": "home",
+									"type": "physical",
+									"line": [
+										"1 SMITH STREET"
+									],
+									"city": "SMITHTOWN",
+									"postalCode": "SM1 2TH",
+									"country": "GB"
+								}
+							],
+							"generalPractitioner": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+									"identifier": {
+										"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+										"value": "B81039"
+									}
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Practitioner",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+								],
+								"lastUpdated": "2021-07-08T17:21:23.007Z",
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+									"value": "B81039"
+								}
+							],
+							"active": true,
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "0469 572058",
+									"use": "work"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"text": "THE SURGERY WORSLEY ROAD IMMINGHAM, GRIMSBY",
+									"postalCode": "DN40 1BE"
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Encounter",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:27:19.929Z",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+								],
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"text": {
+								"status": "generated",
+								"div": "<div xmlns='http://www.w3.org/1999/xhtml'>The ePRID: 656360 has an associated incident number: 10001455 . ** The incident number should NEVER be used to match to directly match to a patient record. Only the ePR ID has a single definite reference to a single YAS patient record. **</div>"
+							},
+							"identifier": [
+								{
+									"use": "usual",
+									"system": "http://ns.yhcr.nhs.uk/yas/epr-id",
+									"value": "656360"
+								},
+								{
+									"use": "usual",
+									"system": "http://ns.yhcr.nhs.uk/yas/incident-id",
+									"value": "10001455"
+								}
+							],
+							"status": "finished",
+							"class": {
+								"system": "http://hl7.org/fhir/v3/ActCode",
+								"code": "EMER",
+								"display": "emergency"
+							},
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "http://snomed.info/sct",
+											"code": "11424001",
+											"display": "Ambulance-based care"
+										}
+									]
+								}
+							],
+							"priority": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/v3/ActPriority",
+										"code": "EM",
+										"display": "emergency"
+									}
+								]
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+								"display": "JOHN SMITH"
+							},
+							"period": {
+								"start": "2021-07-08T16:01:00+01:00",
+								"end": "2021-07-08T18:21:00+01:00"
+							},
+							"hospitalization": {
+								"destination": {
+									"reference": "https://yhcr.nhs.uk/FHIR/Location/18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3",
+									"identifier": {
+										"use": "official",
+										"value": "YHCR:18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3"
+									},
+									"display": "LEEDS GENERAL INFIRMARY - ED"
+								}
+							},
+							"location": [
+								{
+									"location": {
+										"reference": "Location/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+										"display": "3 RAILWAY COTTAGES BOG HALL WHITBY  YO21 1TH"
+									},
+									"status": "active"
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://INTENG1.yas.nhs.uk/fhirbus/Location/63fe0605-677c-48b3-a54c-dc0f7714c63e",
+						"resource": {
+							"resourceType": "Location",
+							"id": "63fe0605-677c-48b3-a54c-dc0f7714c63e",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:21:25.444Z",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"
+								],
+								"tag": [
+									{
+										"code": "LocalDB",
+										"display": "LocalDB"
+									}
+								]
+							},
+							"name": "Casualty Location",
+							"managingOrganization": {
+								"reference": "Organization/RX8",
+								"display": "Yorkshire Ambulance Service NHS Trust"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/91ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "91ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.4787769+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://hl7.org/fhir/observation-category",
+											"code": "vital-signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "75367002"
+									}
+								],
+								"text": "Blood pressure"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"component": [
+								{
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "72313002"
+											}
+										],
+										"text": "Systolic blood pressure"
+									},
+									"valueQuantity": {
+										"value": 140,
+										"unit": "mm[Hg]",
+										"system": "http://unitsofmeasure.org",
+										"code": "mm[Hg]"
+									}
+								},
+								{
+									"code": {
+										"coding": [
+											{
+												"system": "http://snomed.info/sct",
+												"code": "1091811000000102"
+											}
+										],
+										"text": "Diastolic arterial pressure"
+									},
+									"valueQuantity": {
+										"value": 80,
+										"unit": "mm[Hg]",
+										"system": "http://unitsofmeasure.org",
+										"code": "mm[Hg]"
+									}
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/92ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "92ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.6037933+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://hl7.org/CodeSystem/observation-category",
+											"code": "vital-signs",
+											"display": "Vital Signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "276885007",
+										"display": "Core body temperature"
+									}
+								],
+								"text": "Core body temperature"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueQuantity": {
+								"value": 37.5,
+								"unit": "Cel",
+								"system": "http://unitsofmeasure.org",
+								"code": "Cel"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/93ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "93ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.6663025+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACPVU-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+											"code": "vital-signs",
+											"display": "Vital Signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "1104441000000107",
+										"display": "ACVPU (Alert Confusion Voice Pain Unresponsive) scale score"
+									}
+								]
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "248234008",
+										"display": "Alert"
+									}
+								],
+								"text": "Alert"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/94ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "94ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.7131834+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+											"code": "vital-signs",
+											"display": "Vital Signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "364075005",
+										"display": "Heart rate"
+									}
+								],
+								"text": "Heart rate"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueQuantity": {
+								"value": 60,
+								"unit": "/min",
+								"system": "http://unitsofmeasure.org",
+								"code": "/min"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/95ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "95ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.7913189+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+											"code": "survey",
+											"display": "Survey"
+										}
+									],
+									"text": "Survey"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "722742002",
+										"display": "Breathing room air"
+									}
+								],
+								"text": "Breathing room air"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							]
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/96ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "96ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.8538278+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+											"code": "vital-signs",
+											"display": "Vital Signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "103228002",
+										"display": "Blood oxygen saturation"
+									}
+								],
+								"text": "Blood oxygen saturation"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueQuantity": {
+								"value": 98,
+								"unit": "%",
+								"system": "http://unitsofmeasure.org",
+								"code": "%"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/97ffdf71-11e0-eb11-b808-000af7509652",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "97ffdf71-11e0-eb11-b808-000af7509652",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.9007087+00:00",
+								"profile": [
+									"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+											"code": "vital-signs",
+											"display": "Vital Signs"
+										}
+									],
+									"text": "Vital Signs"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "86290005",
+										"display": "Respiratory rate"
+									}
+								],
+								"text": "Respiratory rate"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueQuantity": {
+								"value": 70,
+								"unit": "breaths/minute",
+								"system": "http://unitsofmeasure.org",
+								"code": "/min"
+							}
+						}
+					},
+					{
+						"fullUrl": "http://172.16.6.36:57772/fhirbus/Observation/1652b93a-fc39-4b24-9adf-043f66f14721",
+						"resource": {
+							"resourceType": "Observation",
+							"id": "1652b93a-fc39-4b24-9adf-043f66f14721",
+							"meta": {
+								"lastUpdated": "2021-07-08T17:25:10.4787769+00:00",
+								"profile": [
+									"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1"
+								]
+							},
+							"extension": [
+								{
+									"url": "Encounter/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"status": "final",
+							"category": [
+								{
+									"coding": [
+										{
+											"system": "http://hl7.org/fhir/observation-category",
+											"code": "survey",
+											"display": "Survey"
+										}
+									],
+									"text": "Survey"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "1104051000000101",
+										"display": "Royal College of Physicians NEWS2 (National Early Warning Score 2) total score"
+									}
+								],
+								"text": "NEWS 2"
+							},
+							"subject": {
+								"reference": "Patient/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+							},
+							"effectiveDateTime": "2021-07-08T18:14:00+01:00",
+							"performer": [
+								{
+									"reference": "Practitioner/63fe0605-677c-48b3-a54c-dc0f7714c63e"
+								}
+							],
+							"valueQuantity": {
+								"value": 3,
+								"unit": "{score}",
+								"system": "http://unitsofmeasure.org",
+								"code": "{score}"
+							},
+							"related": [
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/91ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/92ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/93ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/94ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/95ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/96ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								},
+								{
+									"type": "derived-from",
+									"target": {
+										"reference": "http://172.16.6.36:57772/fhirbus/Observation/97ffdf71-11e0-eb11-b808-000af7509652"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}
