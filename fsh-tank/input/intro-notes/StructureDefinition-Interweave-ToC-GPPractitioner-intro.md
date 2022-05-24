@@ -7,8 +7,8 @@ It contains:
 
  - **Identifier** - the ODS Code of the GP Practice. (Field omitted if GP is not known)
  - **Telecom** - the work phone number of the GP Practice (fields may be provided with blank details if not known)
- - **Address** the work address of the GP Practice  (fields may be provided but with blank details if not known)
+ - **Address** - the work address of the GP Practice  (fields may be provided but with blank details if not known)
+ - **Name** - may be provided if known, but otherwise just contact details for the GP Practice are included
 
-Note that the actual name of a GP is not provided - only contact details of the GP Practice
 
 >***Please refer to the examples to see how this will look (a) pre-registration when the patient's GP practice is unknown (b) at finalisation where the GP practice is known***

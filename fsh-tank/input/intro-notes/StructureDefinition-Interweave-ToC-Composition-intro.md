@@ -11,7 +11,7 @@ It contains the following header fields:
  - **Encounter** - a reference to the encounter
  - **Date** - the date and time generated
  - **Title** - always "Ambulatory Transfer of Care"
- - **Confidentiality** - always "N"ormal  ***TBC - is it ever different?***
+ - **Confidentiality** - always "N"ormal
 
   - *Note that the **Author** is a mandatory field in FHIR, but is not actually provided in the current messages*
 
@@ -22,7 +22,7 @@ The composition then contains the following sections:
 
 2. **Patient Demographics** (SNOMED 886731000000109: Patient Demographics)  - **Always a reference to [Patient](StructureDefinition-Interweave-ToC-Patient.html)**
 
-3. **GP Practice** (SNOMED 886711000000101: General practitioner practice) - **AlLways a reference to [GP Practitioner](StructureDefinition-Interweave-ToC-GPPractitioner.html)**
+3. **GP Practice** (SNOMED 886711000000101: General practitioner practice) - **Always a reference to [GP Practitioner](StructureDefinition-Interweave-ToC-GPPractitioner.html)**
 
 4. **Presenting Complaints or Issues** (SNOMED 886891000000102: Presenting complaints or issues) - *not populated*
 
@@ -36,14 +36,12 @@ The composition then contains the following sections:
    Where Observations are available a set of vital signs and NEWS2 scores will be provided, in accordance with the following CareConnect Observation profiles:
    - [BloodPressure](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1)
    - [BodyTemperature](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1)
-   - [ACPVU](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACPVU-Observation-1)
+   - [ACVPU](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACVPU-Observation-1)
    - [HeartRate](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1)
    - [InspiredOxygen](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1)
    - [OxygenSaturation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1)
    - [RespiratoryRate](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1)
    - [NEWS2](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1)
-
-***TODO - ACPVU, which one is this? (There are 2... this is neither!)***
 
 
 8. **Treatments and Interventions** (SNOMED 1077891000000107: Treatments and interventions) - *not populated*
@@ -63,7 +61,7 @@ The composition then contains the following sections:
  - References are provided as indicated - to the Encounter, Patient, GP, and Observations. 
    - Information about the Encounter is always available
    - References to the Patient and GP are always provided, but note that the contents of these resources may be skeletal - depending on what has been possible to ascertain
-   - Observations may or may not be provided ***Finalise only?***, see below for further details of these
+   - Observations are provided at Finalisation only, see below for further details of these
  - All other sections are empty, and contain an EmptyReason of "Unknown". (Future development may add additional datasets, at which time this specification will be updated)
 
 

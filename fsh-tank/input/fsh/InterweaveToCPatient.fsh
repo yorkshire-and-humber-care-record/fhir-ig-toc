@@ -73,7 +73,7 @@ Description: "Interweave ToC Patient resource profile."
 * photo 0..0
 * contact 0..0
 * link 0..0
-
+* managingOrganization 0..0
 
 
 ////////////////////////////////////////////////////////////////////////////////////////

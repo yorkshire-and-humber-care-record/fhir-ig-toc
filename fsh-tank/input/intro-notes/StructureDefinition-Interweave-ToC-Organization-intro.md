@@ -12,8 +12,8 @@ In addition the Ambulance Service organisation is used:
 The Organization resource contains:
 
  - **Identifier** - the ODS Code of the Ambulance Service or Hospital
- - **Type** - always "Healthcare Provider"  ***TO CONFIRM - or is it NHS Trust?***
- - **Telecom** - the work phone number  ***TO CONFIRM - is this included or not?***
- - **Address** the work address 
+ - **Type** - either "Healthcare Provider" for the Ambulance Service, or "NHS Trust" for the hospital
+ - **Telecom** - the work phone number of the organisation, if known
+ - **Address** the work address of the organisation
 
 >***Please refer to the example to see how this will look in practice***

@@ -5,7 +5,7 @@ It contains:
 
  - **Identifier** - the NHS Number of the patient (if known, else this entire block will be omitted)
  - **Active** - always "true"
- - **Name** - the official name of the patient (TBC - any others ever??)
+ - **Name** - the official name of the patient
  - **Gender** and **DoB** - further demographic details
  - **Address** the home address of the patient
  - **General Practitioner** - a reference to a Practitioner resource representing the patient's GP

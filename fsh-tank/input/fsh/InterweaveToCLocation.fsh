@@ -5,8 +5,6 @@ Description: "Interweave ToC Location resource profile."
 * ^status = #active
 
 
-//TODO - is more data provided on Finalise?
-
 * id 1..1
 * meta.lastUpdated 1..1
 * meta.profile 0..*
@@ -14,10 +12,11 @@ Description: "Interweave ToC Location resource profile."
 * name 1..1 
 * name ^short =  "Always 'Casualty Location'" 
 
-// TODO - this seems to be optional and not always included??
-// TODO - confirm the list and system??
+// This is optional and only included if known
+// If included then it is from the standard code list - although only a subset of the values are actaully used:
+// PTRES, CSC, SCHOOL, WORK, ACC
 * type 0..1
-//* type from http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType (required)
+* type from http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType (required)
 * insert Ruleset-CodingWithSystemCodeDisplay(type)
 
 * address 1..1
@@ -67,7 +66,7 @@ Description: "Interweave Location Transfer of Care example"
 
 * name = "Casualty Location"
 
-//TODO - type?
+* type = http://hl7.org/fhir/v3/RoleCode#PTRES "Patient's Residence"
 
 * address[0].line[0] = "1 Acacia Avenue"
 * address[0].city = "York"

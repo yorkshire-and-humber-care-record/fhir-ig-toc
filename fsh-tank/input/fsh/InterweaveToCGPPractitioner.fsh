@@ -35,7 +35,9 @@ Description: "Interweave ToC GP Practitioner resource profile."
 // Probably always true? For some reason used here but not on other resources?
 * active 1..1
 
-// Name is not included! (As it is really representing the GP Practice organisat!)
+// Name leave optional
+// May not always be included! (As it is really representing the GP Practice organisat!)
+// But may be included if known
 
 // Work phone number of the GP practice, if known. (In practice may contain blanks)
 * telecom 0..1
@@ -72,7 +74,6 @@ Description: "Interweave ToC GP Practitioner resource profile."
 * insert Ruleset-RemoveUnwantedIdentifierFields
 * insert Ruleset-RemoveUnwantedIdentifierFieldsForSlice(ODSOrganizationCode)
 
-* name 0..0
 * gender 0..0
 * birthDate 0..0
 * photo 0..0

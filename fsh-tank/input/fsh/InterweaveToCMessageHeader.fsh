@@ -10,7 +10,7 @@ Description: "Interweave ToC Message Header resource profile."
 
 * eventCoding 1..1   // STU3: event
 * eventCoding from InterweaveToCEventType (required)
-* eventCoding = https://yhcr.nhs.uk/STU3/ValueSet/EventType-1#YH001 "Transfer of care from ambulance to ED" (exactly)
+//* eventCoding = https://yhcr.nhs.uk/STU3/ValueSet/EventType-1#YH001 "Transfer of care from ambulance to ED" (exactly)
 * eventCoding ^short = "Always YH001: Transfer of care from ambulance to ED"
 
 // Reciever is the hospital with A&E department
@@ -61,7 +61,7 @@ Description: "Interweave Message Header Transfer of Care example - Pre Registrat
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
 
 //STU3 = event
-* eventCoding = https://yhcr.nhs.uk/STU3/ValueSet/EventType-1#YH001 "Transfer of care from ambulance to ED"
+* eventCoding = https://yhcr.nhs.uk/STU3/CodeSystem/EventType-1#YH001 "Transfer of care from ambulance to ED"
 
 * destination.name = "YHCR System of Systems Reliable Message Gateway"
 * destination.endpoint = "https://sandpit.yhcr.nhs.uk/fhir/stu3/$process-message"
@@ -100,7 +100,7 @@ Description: "Interweave Message Header Transfer of Care example - Finalisation"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
 
 //STU3 = event
-* eventCoding = https://yhcr.nhs.uk/STU3/ValueSet/EventType-1#YH001 "Transfer of care from ambulance to ED"
+* eventCoding = https://yhcr.nhs.uk/STU3/CodeSystem/EventType-1#YH001 "Transfer of care from ambulance to ED"
 
 * destination.name = "YHCR System of Systems Reliable Message Gateway"
 * destination.endpoint = "https://sandpit.yhcr.nhs.uk/fhir/stu3/$process-message"

@@ -54,10 +54,12 @@ Description: "Interweave ToC DocumentReference resource profile."
 // Status is already mandatory in FHIR (challenge may be accurately populating it with anything other than "current")
 // Add docStatus for useful additional information about the document (will normally just be "final")
 * status 1..1
+* status ^short = "Always 'current'"
 * docStatus 1..1
+* docStatus ^short = "Always 'final'"
 
-// Type - no type! I guess it is considered "obvious"? BUT this is a mandatory field in FHIR!
-* type ^short = "NOT ACTUALLY PROVIDED"
+// Type - this already is a mandatory field in FHIR!
+* type ^short = "Always YAS Electronic Care Record"
 
 // Subject - mandatory, and must refer to a patient
 * subject 1..1
@@ -65,10 +67,7 @@ Description: "Interweave ToC DocumentReference resource profile."
 * subject only Reference(CareConnect-Patient-1)
 * insert Ruleset-ReferenceWithReferenceAndDisplay(subject)
 
-// No dates! (I guess also considered "obvious" as bundled with an Encounter)
-// BUT "indexed" is a mandatory field in FHIR!
-// Note that the the creation date is populated on the attachment
-* date ^short = "NOT ACTUALLY PROVIDED"  // indexed in STU3
+//Indexed (called "date"in R4) is already a mandatory field
 
 // No Author, but both Authenticator and Custodian. Both pointing at the Ambulance Service
 * authenticator 1..1
@@ -92,8 +91,8 @@ Description: "Interweave ToC DocumentReference resource profile."
 * content.attachment.title 1..1
 * content.attachment.creation 1..1
 // And URL - although not sure why as content is embedded already
-* content.attachment.url 1..1
-
+//* content.attachment.url 1..1
+* content.attachment.url ^short = "Unlikely to be needed as the content is embedded"
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // Remove fields we don't need
@@ -153,6 +152,11 @@ Description: "Interweave Document Reference Transfer of Care example"
 
 * status = http://hl7.org/fhir/document-reference-status#current 
 * docStatus = http://hl7.org/fhir/composition-status#final 
+
+* type = http://loinc.org#29751-5 "Critical care records"
+* type.text = "YAS electronic care record"
+
+* date = "2022-02-01T09:37:00.441319+00:00" //indexed in STU3
 
 * subject = Reference(InterweaveToCPatientExample) 
 * subject.display = "Mr Fred BLOGGS"

@@ -6,7 +6,7 @@ The Ambulance Transfer of Care messaging consists of three types of message whic
 
 2. **Cancellation** - this is used more rarely, and enables a pre-registration to be cancelled. For example if the Ambulance is diverted to a different ED. The message is identical to the pre-registration message, other than the Encounter status
 
-3. **Finalisation** - this is sent after the patient has been handed over to the ED. It updates the pre-registration information with additional details which may have been captured since then and, most importantly, attaches a PDF with the full handover summary. Within a hospital's systems this is typically attached to the patient record, thus avoiding the need for manual handover of paperwork.
+3. **Finalisation** - this is sent after the patient has been handed over to the ED. It updates the pre-registration information with additional details which may have been captured since then, including Vital Signs observations. Most importantly, it also attaches a PDF with the full handover summary. Within a hospital's systems this is typically attached to the patient record, thus avoiding the need for manual handover of paperwork.
 
 
 Each message consists of a FHIR Bundle of type "message" which contains:

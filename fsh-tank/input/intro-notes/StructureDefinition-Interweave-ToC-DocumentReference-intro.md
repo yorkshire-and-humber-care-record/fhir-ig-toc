@@ -7,13 +7,11 @@ It contains:
 
  - **Identifier** - the EPR Id from which the information in the PDF has been generated
  - **Status** - always "current"
- - **DocStatus** - always "final" (TBC - is it ever anything else???)
+ - **DocStatus** - always "final"
+ - **Indexed** - the timestamp of creation
+ - **Type** - always "YAS electronic care record"
  - **Subject** - a reference to the Patient
  - **Authenticator** and **Custodian** - a reference to the Ambulance Service organisation
  - **Content** - this contains an embedded [PDF document](ExampleToC.pdf) (base64 encoded)
-
-***TODO - double-check the PDF is test data!***
-***TODO - "indexed" and "type" are mandatory in FHIR, but currently not actually provided in the messages***
-
 
 >***Please refer to the examples to see how this will look in practice***

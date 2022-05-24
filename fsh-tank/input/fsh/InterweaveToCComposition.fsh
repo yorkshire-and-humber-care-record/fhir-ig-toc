@@ -130,7 +130,7 @@ Description: "Interweave Encounter Transfer of Care example - Pre Registration"
 * meta.profile[1] = "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"
 
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml/'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
 
 //***********************************************************
 * status = #preliminary
@@ -191,7 +191,7 @@ Description: "Interweave Encounter Transfer of Care example - Finalise"
 * meta.profile[1] = "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1"
 
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml/'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>\n    <p>Yorkshire Ambulance Service Transfer of Care for JOHN SMITH, NHS Number: 1234567890</p>\n    </div>"
 
 //***********************************************************
 * status = #final
@@ -229,7 +229,7 @@ Description: "Interweave Encounter Transfer of Care example - Finalise"
 * insert Ruleset-AddCompositionSectionExample("Observations", 1102421000000108, "Observations")
 * section[=].entry[+].reference = "Observation/BloodPressure-guid-here"
 * section[=].entry[+].reference = "Observation/BodyTemperature-guid-here"
-* section[=].entry[+].reference = "Observation/ACPVU-guid-here"
+* section[=].entry[+].reference = "Observation/ACVPU-guid-here"
 * section[=].entry[+].reference = "Observation/HeartRate-guid-here"
 * section[=].entry[+].reference = "Observation/InspiredOxygen-guid-here"
 * section[=].entry[+].reference = "Observation/OxygenSaturation-guid-here"

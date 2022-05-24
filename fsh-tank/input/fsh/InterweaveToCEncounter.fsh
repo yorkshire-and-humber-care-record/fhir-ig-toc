@@ -60,7 +60,7 @@ Description: "Interweave ToC Encounter resource profile."
 //* type.coding = $SCT#11424001 "Ambulance-based care" (exactly)
 
 
-// Priority: Will normally (always?) be "Emergency"
+// Priority: Will normally (always) be "Emergency"
 * priority 1..1
 * priority from http://hl7.org/fhir/ValueSet/v3-ActPriority (required)
 * insert Ruleset-CodingWithSystemCodeDisplay(priority)
@@ -174,7 +174,9 @@ Description: "Interweave Encounter Transfer of Care example"
 * period.end = "2022-02-01T09:37:00.441319+00:00"
 
 
-// ***********TODO This location reference is not included in the bundle (and may not even exist?) It is just a recognisable ID...
+// NB: This location reference is not included in the bundle.
+//   In theory it points to a centrally hosted Location resource
+//   In practice it really used as just a recognisable ID for the hospital / ED
 * hospitalization.destination.reference = "https://yhcr.nhs.uk/FHIR/Location/18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3"
 * hospitalization.destination.identifier.use = #official
 * hospitalization.destination.identifier.value = "YHCR.18978a5f-f1ff-49ae-a8c9-0b671ac4a4c3"
