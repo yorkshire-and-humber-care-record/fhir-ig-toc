@@ -27,7 +27,7 @@ Each message consists of a FHIR Bundle of type "message" which contains:
 ***The following complete examples may be useful:***
  - [Pre-registration message](ToCFullExample-PreReg.txt)
  - [Finalisation message](ToCFullExample-Finalise.txt)
- - [PDF document](ExampleToC.pdf)
+ - [PDF document](ExampleToC-full.pdf)
 
 
 The diagram below further illustrates this structure:

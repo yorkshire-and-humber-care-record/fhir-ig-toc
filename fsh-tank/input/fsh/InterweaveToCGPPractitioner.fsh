@@ -8,10 +8,8 @@ Description: "Interweave ToC GP Practitioner resource profile."
 // This is a "practitioner" resource that is used to represent the patient's GP
 // (In my opinion the "organization" resource should have been used instead and is a better fit)
 
-// This is all optional, as pre-registration some of it is included but with blanks.
-// (This is actually invalid FHIR, and the correct approach is to omit the field entirely)
-// (And why send the Practitioner at all if not known?)
-// Assume however that it may not always be possible to discover the patient's GP
+// The latest examples indicate that this is always populated, even at pre-registration
+// (This seems unlikley to be ALWAYS the case, eg if unconcious, but haven't been able to confirm examples of how this is handled)
 
 * id 1..1
 // Last updated is for some reason not provided with this resource
@@ -93,9 +91,9 @@ Description: "Interweave ToC GP Practitioner resource profile."
 // Examples
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Instance: InterweaveToCGPPractitionerExampleFinalise
+Instance: InterweaveToCGPPractitionerExample
 InstanceOf: InterweaveToCGPPractitioner
-Description: "Interweave GP Practitioner Transfer of Care example (finalise)"
+Description: "Interweave GP Practitioner Transfer of Care example"
 
 * meta.lastUpdated = "2022-02-01T09:37:00.441319+00:00"
 * meta.profile[0] = "https://fhir-toc.yhcr.nhs.uk/StructureDefinition/Interweave-ToC-GPPractitioner"
@@ -118,6 +116,8 @@ Description: "Interweave GP Practitioner Transfer of Care example (finalise)"
 * address[0].postalCode = "HU18 1LP"
 
 
+
+/**** REMOVE this - latest examples indicate that the structure is properly populated even at pre-reg ***
 
 Instance: InterweaveToCGPPractitionerExamplePreReg
 InstanceOf: InterweaveToCGPPractitioner
@@ -144,3 +144,4 @@ Description: "Interweave GP Practitioner Transfer of Care example (prereg)"
 * address[0].text = ""
 * address[0].postalCode = ""
 
+*************/

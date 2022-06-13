@@ -33,11 +33,26 @@ Description: "Interweave ToC Patient resource profile."
 * birthDate 0..1
 * gender 0..1
 
+// Telecom: (Already optional in CareConnect)
+// Id, Rank and period not used
+* telecom.id 0..0
+* telecom.rank 0..0
+* telecom.period 0..0
 
 // Address: This is provided, not much to add
 // (Doesn't look like we provide the "text" or any "period")
 * address.text 0..0
 * address.period 0..0
+
+
+// Contact: Already optional in Care Connect
+* contact.gender 0..0
+* contact.organization 0..0
+* contact.period 0..0
+* contact.telecom.rank 0..0
+* contact.telecom.period 0..0
+* contact.address.text 0..0
+* contact.address.period 0..0
 
 // We provide the GP
 * generalPractitioner 0..1
@@ -66,12 +81,10 @@ Description: "Interweave ToC Patient resource profile."
 * name[official].id 0..0
 * name[official].period 0..0
 
-* telecom 0..0
 * deceased[x] 0..0
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
 * photo 0..0
-* contact 0..0
 * link 0..0
 * managingOrganization 0..0
 
@@ -103,6 +116,10 @@ Description: "Interweave Patient Transfer of Care example"
 * name[0].family = "BLOGGS"
 * name[0].given[0] = "Fred"
 
+* telecom[0].system = #phone
+* telecom[0].value = "07123987654"
+* telecom[0].use = #home
+
 * birthDate = 1992-01-27
 * gender = http://hl7.org/fhir/administrative-gender#male
 
@@ -114,7 +131,19 @@ Description: "Interweave Patient Transfer of Care example"
 * address[0].postalCode = "HU18 1AB"
 * address[0].country = "GB"
 
+
+* contact[0].relationship = http://hl7.org/fhir/v2/0131#N 
+* contact[0].name.use = #official "Official"
+* contact[0].name.family = "BLOGGS"
+* contact[0].name.given[0] = "Jane"
+* contact[0].telecom[0].system = #phone
+* contact[0].telecom[0].value = "07123123123"
+* contact[0].telecom[0].use = #home
+* contact[0].address.line[0] = "5 Long Avenue"
+* contact[0].address.postalCode = "HU17 1XY"
+
+
 // This is the current implementation and not ideal. Should really be referencing an organisation. And including display text of the name.
-* generalPractitioner = Reference(InterweaveToCGPPractitionerExampleFinalise) 
+* generalPractitioner = Reference(InterweaveToCGPPractitionerExample) 
 * generalPractitioner.identifier.system = "https://fhir.nhs.uk/id/ods-organization-code"
 * generalPractitioner.identifier.value = "B81004"

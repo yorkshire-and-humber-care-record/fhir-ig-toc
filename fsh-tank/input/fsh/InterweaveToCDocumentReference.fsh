@@ -42,7 +42,7 @@ Description: "Interweave ToC DocumentReference resource profile."
 
 // This "system" is actaully not valid FHIR! must be an absolute reference
 * identifier[YasEprIdentifier].system 1..1
-* identifier[YasEprIdentifier].system = "YASEPR" (exactly)
+* identifier[YasEprIdentifier].system = "http://ns.yhcr.nhs.uk/yas/epr-id" (exactly)
 * identifier[YasEprIdentifier].use 1..1
 * identifier[YasEprIdentifier].use = #usual (exactly)
 * identifier[YasEprIdentifier].value 1..1
@@ -131,10 +131,6 @@ Description: "Interweave ToC DocumentReference resource profile."
 // Examples
 ////////////////////////////////////////////////////////////////////////////////////////
 
-//******************* NB ************************************
-//This example does not have a "type" or "indexed" - this represents the current implementation BUT is not valid FHIR!
-//***********************************************************/
-
 Instance: InterweaveToCDocumentReferenceExample
 InstanceOf: InterweaveToCDocumentReference
 Description: "Interweave Document Reference Transfer of Care example"
@@ -147,7 +143,7 @@ Description: "Interweave Document Reference Transfer of Care example"
 * insert Ruleset-BlankExampleText
 
 * identifier[0].use = #usual
-* identifier[0].system = "YASEPR"
+* identifier[0].system = "http://ns.yhcr.nhs.uk/yas/epr-id"
 * identifier[0].value = "91b12282-c8e6-4884-b635-8892a2a8463c"
 
 * status = http://hl7.org/fhir/document-reference-status#current 

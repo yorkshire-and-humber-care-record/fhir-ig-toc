@@ -68,6 +68,8 @@ Description: "Interweave Location Transfer of Care example"
 
 * type = http://hl7.org/fhir/v3/RoleCode#PTRES "Patient's Residence"
 
+* address[0].use = #temp 
+* address[0].type = #physical 
 * address[0].line[0] = "1 Acacia Avenue"
 * address[0].city = "York"
 * address[0].postalCode = "YO21 1AB"

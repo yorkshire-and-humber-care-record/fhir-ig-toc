@@ -42,7 +42,7 @@ Description: "Interweave ToC Encounter resource profile."
 
 
 // Status: Already mandatory in FHIR
-
+* status ^short = "'in-progress' for pre-registration, 'cancelled' for cancellation, or 'finished' for finalisation"
 
 // Class: Make mandatory, and tighten the coding.
 * class from http://hl7.org/fhir/ValueSet/v3-ActEncounterCode (required)
@@ -76,6 +76,7 @@ Description: "Interweave ToC Encounter resource profile."
 * period 1..1
 * period.start 1..1
 * period.end 0..1
+* period.end ^short = "End time - only populated at finalisation"
 
 
 // Hospitalization - shows where the patient was conveyed to

@@ -12,6 +12,6 @@ It contains:
  - **Type** - always "YAS electronic care record"
  - **Subject** - a reference to the Patient
  - **Authenticator** and **Custodian** - a reference to the Ambulance Service organisation
- - **Content** - this contains an embedded [PDF document](ExampleToC.pdf) (base64 encoded)
+ - **Content** - this contains an embedded PDF document (base64 encoded)
 
->***Please refer to the examples to see how this will look in practice***
+>***Please refer to the examples to see how this will look in practice. See also example PDFs, [typical](ExampleToC-typical.pdf) and [full](ExampleToC-full.pdf)***

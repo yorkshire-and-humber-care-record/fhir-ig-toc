@@ -6,7 +6,7 @@ This represents the casualty location
 It contains:
 
  - **Name** - always "Casualty Location"
- - **Address** - the address of the casualty location (may be provided with blanks if not known)
+ - **Address** - the address of the casualty location
  - **Managing Organisation** - a reference to the Ambulance Service involved
   - **Type** - from the standard Care Connect code list, if known. In practice only the following values are currently used:
     - Domestic Address = "PTRES", "Patient's Residence"

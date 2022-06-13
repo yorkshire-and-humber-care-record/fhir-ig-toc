@@ -7,8 +7,10 @@ It contains:
  - **Active** - always "true"
  - **Name** - the official name of the patient
  - **Gender** and **DoB** - further demographic details
- - **Address** the home address of the patient
+ - **Telecom and Address** - the phone number and home address of the patient
+ - **Contact** - details of a contact person, for example next of kin
  - **General Practitioner** - a reference to a Practitioner resource representing the patient's GP
+ - **Ethnic Category** - if captured, or may be "Z - Unknown"
 
  ***Note that what is known will be provided, but in some cases this may be very little. This includes possibly not knowing the NHS Number of the patient.***
 

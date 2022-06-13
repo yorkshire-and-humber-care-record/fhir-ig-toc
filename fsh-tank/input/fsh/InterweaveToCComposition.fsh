@@ -159,7 +159,7 @@ Description: "Interweave Encounter Transfer of Care example - Pre Registration"
 * section[=].entry = Reference(InterweaveToCPatientExample)
 
 * insert Ruleset-AddCompositionSectionExample("GP Practice", 886711000000101, "General practitioner practice")
-* section[=].entry = Reference(InterweaveToCGPPractitionerExampleFinalise)
+* section[=].entry = Reference(InterweaveToCGPPractitionerExample)
 
 * insert Ruleset-AddCompositionDummySectionExample("Presenting Complaints or Issues", 886891000000102, "Presenting complaints or issues")
 * insert Ruleset-AddCompositionDummySectionExample("Relevant Past History", 933271000000106, "Relevant past medical\, surgical and mental health history")
@@ -220,7 +220,7 @@ Description: "Interweave Encounter Transfer of Care example - Finalise"
 * section[=].entry = Reference(InterweaveToCPatientExample)
 
 * insert Ruleset-AddCompositionSectionExample("GP Practice", 886711000000101, "General practitioner practice")
-* section[=].entry = Reference(InterweaveToCGPPractitionerExampleFinalise)
+* section[=].entry = Reference(InterweaveToCGPPractitionerExample)
 
 * insert Ruleset-AddCompositionDummySectionExample("Presenting Complaints or Issues", 886891000000102, "Presenting complaints or issues")
 * insert Ruleset-AddCompositionDummySectionExample("Relevant Past History", 933271000000106, "Relevant past medical\, surgical and mental health history")
