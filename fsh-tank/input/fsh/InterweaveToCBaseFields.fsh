@@ -9,7 +9,7 @@ RuleSet: Ruleset-RemoveUnwantedHeaderFields
 * meta.id 0..0
 * meta.security 0..0
 * meta.versionId 0..0
-* meta.tag 0..0
+// Allow tags - YAS do use them * meta.tag 0..0
 * text ^short = "Do NOT rely on this field. (Some examples on this site may automaticaly generate it, but not included in the actual messages)"
 * contained 0..0
 

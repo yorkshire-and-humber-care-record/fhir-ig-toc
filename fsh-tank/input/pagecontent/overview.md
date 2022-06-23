@@ -21,18 +21,18 @@ Each message consists of a FHIR Bundle of type "message" which contains:
    - Section: GP Practice - reference to the **[GP Practitioner](StructureDefinition-Interweave-ToC-GPPRactitioner.html)**
    - Section: **Observations** ***(Finalisation only)*** - reference to a set of vital signs plus NEWS2 score (see [Composition](StructureDefinition-Interweave-ToC-Composition.html) for further details)
 
-   Plus bundled FHIR Resources for each of the above mentioned references.
+   Plus bundled FHIR Resources for each of the above mentioned references, as well as for the Encounter's Location.
 
    
 ***The following complete examples may be useful:***
- - [Pre-registration message](ToCFullExample-PreReg.txt)
- - [Finalisation message](ToCFullExample-Finalise.txt)
+ - [Pre-registration message](ToCFullExample-PreReg2.txt)
+ - [Finalisation message](ToCFullExample-Finalise2.txt)
  - [PDF document](ExampleToC-full.pdf)
 
 
 The diagram below further illustrates this structure:
 
-   <img src=".\ToCMessageStructure.png" alt="Intro Text" style="clear:both; float:none">
+   <img src=".\ToCMessageStructure2.png" alt="Intro Text" style="clear:both; float:none">
 
 
 
